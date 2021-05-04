@@ -8,6 +8,6 @@ Protože jsem chtěla uchovat velikost souboru co nejmenší, rozhodla jsem se n
 
 ## Stack pro tento projekt. 
 
-HTML5
-SCSS
-JS
+- HTML5
+- SCSS
+- JS

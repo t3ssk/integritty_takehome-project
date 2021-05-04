@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto&display=swap');
+@import '../variables.scss';
+
+body{
+    font-size: 18px;
+    font-family: $font1;
+    font-weight: $heavy;
+    color: $main-text;
+}
+
+.nav{
+    text-transform: uppercase;
+    &__logo{
+        font-size: 26px;
+        text-align: left;
+        line-height: 30.21px;
+    }
+    &--links{
+        font-size: 21px;
+        line-height: 31.12px;
+    }
+}
+
+.logo--red{
+    color: $deep-red;
+}
+
+.hero{
+    &__title{
+        text-transform: uppercase;
+        font-size: 64px;
+        color: #fff;
+        text-shadow: 0 0 15px #00000040;
+        text-align: center;
+        line-height: 94.85px;
+    }
+}
+
+.vaxxed{
+    color: #fff;
+    text-align: center;
+    &__info{
+        font-size: 1rem;
+        line-height: 26.68px;
+    }
+    &__number{
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+
+.more-info{
+    &__heading{
+        font-size: 32px;
+        line-height: 47,42px;
+    }
+    &__link{
+        font-size: 21px;
+        line-height: 31.5px;
+    }
+    &__p{
+        font-family: $font2;
+        font-weight: $normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.btn{
+    color: $brown;
+    font-size: 1rem;
+    line-height: 26.68px;
+    font-family: $font1;
+}
+
+.link--red{
+    color: $deep-red;
+    text-decoration: underline solid $deep-red;
+}
+
+.footer-container{
+    font-weight: $normal;
+    &__copyright{
+        font-family: $font2;
+    }
+    &__links{
+        color: $deep-red;
+    }
+}
