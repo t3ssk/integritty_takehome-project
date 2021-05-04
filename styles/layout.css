@@ -51,7 +51,7 @@ body {
 
 .more-info__heading {
   font-size: 32px;
-  line-height: 47,42px;
+  line-height: 47.42px;
 }
 
 .more-info__link {
@@ -89,5 +89,39 @@ body {
 
 .footer-container__links {
   color: #D0384B;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 56.32px;
+  }
+  .vaxxed__info {
+    font-size: 16px;
+    line-height: 23.71px;
+  }
+  .vaxxed__number {
+    font-size: 32px;
+    line-height: 47.42px;
+  }
+  .more-info__heading {
+    font-size: 21px;
+    line-height: 31.12px;
+  }
+  .more-info__link {
+    font-size: 21px;
+    line-height: 31.12px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 23.71px;
+  }
+  .footer-container {
+    font-weight: 400;
+  }
+  .footer-container__copyright {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

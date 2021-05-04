@@ -52,7 +52,7 @@ body{
 .more-info{
     &__heading{
         font-size: 32px;
-        line-height: 47,42px;
+        line-height: 47.42px;
     }
     &__link{
         font-size: 21px;
@@ -85,5 +85,48 @@ body{
     }
     &__links{
         color: $deep-red;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero{
+        &__title{
+            font-size: 38px;
+            line-height: 56.32px;
+        }
+    }
+
+    .vaxxed{
+        &__info{
+            font-size: 16px;
+            line-height: 23.71px;
+        }
+        &__number{
+            font-size: 32px;
+            line-height: 47.42px;
+        }
+    }
+
+    .more-info{
+        &__heading{
+            font-size: 21px;
+            line-height: 31.12px;
+        }
+        &__link{
+            font-size: 21px;
+            line-height: 31.12px;
+        }
+    }
+
+    .btn{
+        font-size: 16px;
+        line-height: 23.71px;
+    }
+    .footer-container{
+        font-weight: $normal;
+        &__copyright{
+            font-size:16px;
+        }
     }
 }
