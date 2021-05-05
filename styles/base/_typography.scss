@@ -15,9 +15,26 @@ body{
         text-align: left;
         line-height: 30.21px;
     }
-    &--links{
+    &__links{
         font-size: 21px;
         line-height: 31.12px;
+    }
+    &__link{
+        color: $main-text;
+        text-decoration: none;
+    }
+}
+
+.menu-toggle{
+    &__text{
+        font-family: $font1;
+        font-weight: $heavy;
+        color: $main-text;
+        text-transform: uppercase;
+        font-size: 14px;
+        &:hover, &:active, &:focus{
+            color: $deep-red;
+        }
     }
 }
 

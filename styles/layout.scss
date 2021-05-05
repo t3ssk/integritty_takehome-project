@@ -1,5 +1,9 @@
-@import './variables.scss', 
-'base/typography.scss';
+// 1. Base
+@import 
+    './variables.scss', 
+    'base/reset.scss',
+    'base/typography.scss';
 
-
-
+// 2. Layout
+@import 
+    'layout/nav.scss';
