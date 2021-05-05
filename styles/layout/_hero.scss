@@ -1,0 +1,97 @@
+.hero{
+   width: 100%;
+   height: 700px;
+   background-image: url(../../assets/image-hero.png);
+   background-size: cover;
+   background-repeat: no-repeat; 
+   background-position: center;
+   position: relative;
+   &::before{
+       position: absolute;
+       content: '';
+       width: 100vw;
+       height: 100%;
+       background-color: $teal;
+       pointer-events: none;
+       z-index: 1;
+   }
+   &__title{
+       position: relative;
+       z-index: 3;
+       padding-top: 27vh;
+       width: 14ch;
+       margin: auto;
+       &::before{
+        z-index: -3;
+        content: '';
+        width: 180px;
+        height: 180px; 
+        position: absolute;
+        left: 8.3ch;
+        top: 22vh;
+        background-color: $secondary-yellow;
+        border-radius: 50%;
+       }
+   }
+}
+@media screen and (max-width: 1030px){
+    .hero{
+        &__title{
+            padding-top: 20vh;
+            &::before{
+                top: 17vh;
+            }
+    }}
+}
+@media screen and (max-width: 792px){
+    .hero{
+        &__title{
+            padding-top: 27vh;
+            &::before{
+                top: 23vh;
+            }
+    }}
+}
+
+@media screen and (max-width: 540px){
+    .hero{
+        height: 375px;
+        &__title{
+            padding-top: 16vh;
+            &::before{
+                width: 108px;
+                height: 108px;
+                top: 13vh;
+            }
+    }}
+}
+
+@media screen and (max-width: 414px){
+    .hero{
+        &__title{
+            padding-top: 20vh;
+            &::before{
+                top: 16vh;
+            }
+    }}
+}
+
+@media screen and (max-width: 380px){
+    .hero{
+        &__title{
+            padding-top: 22vh;
+            &::before{
+                top: 18vh;
+            }
+    }}
+}
+
+@media screen and (max-width: 375px){
+    .hero{
+        &__title{
+            padding-top: 18vh;
+            &::before{
+                top: 15vh;
+            }
+    }}
+}

@@ -1,0 +1,72 @@
+.more-info{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    &__heading{
+        margin: 40px auto 30px;
+    }
+    &__flexbox{
+        display: flex;
+        justify-content: center;
+    }
+    &__flexchild{
+        flex: 1 1 0px;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px #00000033;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__logo {
+        max-width: 112px;
+        align-self: center;
+    }
+    &__link{
+        padding: 10px auto;
+    }
+    &__p{
+        padding-bottom: 10px;
+    }
+}
+
+.btn {
+    border: 2px solid $brown;
+    border-radius: 5px;
+    padding: 6px 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: 50ms ease-in;
+    &__icon{
+        margin-left: 2px;
+    }
+    &:hover{
+        background-color: $deep-red;
+        border: 2px solid $deep-red;
+        color: white;
+    }
+    &:active{
+       background-color: darken($color: $deep-red, $amount: 10%);
+       color: white;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .more-info{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .more-info{
+        width: 90%;
+        &__flexbox{
+            flex-direction: column;
+        }
+        &__flexchild{
+            width: 90%;
+            margin: 30px auto;
+        }
+    }
+}

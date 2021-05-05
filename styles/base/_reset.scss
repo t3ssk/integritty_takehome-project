@@ -38,5 +38,17 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 0;	
+}
+
+button:focus, button:active, a:focus, a:active {
+	outline-color: $deep-red;
+}
+
+::-moz-selection { 
+  background: $secondary-yellow;
+}
+
+::selection {
+  background: $secondary-yellow;
 }

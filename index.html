@@ -24,19 +24,24 @@
 			</nav>
 		</header>
 		<section class="hero">
-			<h1 class="hero__title">Udělejme <span class="hero--decorative">tečku</span> za pandemií.</h1>
-		</section>
+			<h1 class="hero__title">Udělejme tečku za pandemií.</h1>
+		</section> 
+        <div class="vaxxed__graph" aria-valuenow="1031033" aria-valuemax="10000000"></div>
 		<div class="vaxxed">
-            <!-- TODO: Progress bar jako konicky gradient -->
-			<p class="vaxxed__info">V ČR již očkováno lidí</p>
+			<p class="vaxxed__info top">V ČR již očkováno lidí</p>
 			<!-- TODO: Connect to API -->
 			<h2 class="vaxxed__number">1 031 033</h2>
-			<p class="vaxxed__info">k 16.3.2021</p>
-			<img src="assets/Iconinfo.svg" class="vaxxed__icon"/>
+            <div class="vaxxed__info bottom">
+			    <p class="vaxxed__info bottom">k 16.3.2021</p>
+			    <img src="assets/Iconinfo.svg" class="vaxxed__icon"/>
+            </div>
 			<!-- TODO: Toggle visibility on hover -->
 			<div class="vaxxed__tooltip">
 				Více informací najdete na
-				<a href="www.mzcr.cz" target="_blank" rel="noopener noreferrer"
+				<a  href="www.mzcr.cz" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="link--red"
 					>www.mzcr.cz</a>
 			</div>
 		</div>
@@ -130,7 +135,7 @@
 		<footer class="footer-container">
 			<p class="footer-container__copyright">2021 &#169; Ministerstvo zdravotnictví ČR. Všechna práva vyhrazena.</p>
 			<div class="footer-container__links">
-				<a href="#" class="link--red">Prohlášení o přístupnosti webových stránek</a> |
+				<a href="#" class="link--red">Prohlášení o přístupnosti webových stránek</a> <span class="footer-container--lg">|</span>
                 <a href="#" class="link--red">Ochrana osobních údajů</a>
 			</div>
 		</footer>

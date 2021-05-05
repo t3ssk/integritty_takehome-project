@@ -1,0 +1,78 @@
+/** @format */
+
+.vaxxed {
+	width: 250px;
+	height: 250px;
+	background-color: $brown;
+	border-radius: 50%;
+	margin: -260px auto 0;
+    position: relative;
+    z-index: 4;
+    &__icon{
+        margin-left: 2px;
+    }
+    &__info.top{
+        padding-top: 63px;
+    }
+    &__info.bottom{
+        display: flex;
+        justify-content: center;
+    }
+	&__tooltip {
+        display: none;
+		position: absolute;
+		background-color: white;
+        width: 105%;
+		padding: 7px;
+		border: 1px solid rgba(0, 0, 0, 0.068);
+		border-radius: 5px;
+        top: 190px;
+        left: -5px;
+		&::before {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 5px solid white;
+			left: 162px;
+			top: -5px;
+		}
+	}
+    &__graph{
+        width: 270px;
+        height: 270px;
+        z-index: 4;
+        position: relative;
+        background: conic-gradient(#24AFA1 10%, #DADADA 0);
+        border: 5px solid white;
+        border-radius: 50%;
+        margin: -135px auto 0;
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    .vaxxed{
+        width: 194px;
+        height: 194px;
+        margin: -207px auto 0;
+         &__info.top{
+        padding-top: 53px;
+        }
+        &__tooltip{
+            top:150px;
+            left: -32px;
+            width: 140%;
+        } 
+         &__graph{
+        width: 218px;
+        height: 218px;
+        margin: -75px auto 0;
+    }
+    }
+   
+}
+

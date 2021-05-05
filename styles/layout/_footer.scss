@@ -1,0 +1,23 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 57px auto 16px;
+}
+
+@media screen and (max-width: 850px){
+  .footer-container { 
+      flex-direction: column;
+      text-align: center;
+
+}
+}
+@media screen and (max-width: 380px){
+    .footer-container { 
+      width: 30ch;
+
+}
+    .footer-container--lg{
+        display: none;
+    }
+}
