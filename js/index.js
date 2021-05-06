@@ -2,7 +2,7 @@ import { CountUp } from './countUp.min.js';
 
 const menuToggle = document.getElementById('menu-toggle');
 const tooltipToggle = document.getElementById('vaxxed__icon');
-
+const body = document.querySelector('body')
 /**
  * Toggluje viditelnost menu a styl Menu button
  */

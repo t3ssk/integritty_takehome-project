@@ -121,18 +121,24 @@
     }
 }
 
+@media screen and (max-width: 420px){
+  
+    .menu-toggle{
+        left: 72vw;
+        width: 90px;
+    }
+}
 @media screen and (max-width: 380px){
   
     .menu-toggle{
-        left: 72%;
+        left: 68vw;
         width: 90px;
     }
 }
 
-
 @media screen and (max-width: 320px){
   
     .menu-toggle{
-        left: 67%;
+        left: 65%;
     }
 }
