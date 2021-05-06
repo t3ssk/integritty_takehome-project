@@ -25,7 +25,7 @@ const toggleMenu = () => {
 const showTooltip = () => {
 	const tooltip = document.getElementById('vaxxed__tooltip');
 	if (tooltip.classList[1] === 'open') {
-		tooltip.classList.remove('open');
+		setTimeout(()=>tooltip.classList.remove('open'), 1000);
 	} else {
 		tooltip.classList.add('open');
 	}
