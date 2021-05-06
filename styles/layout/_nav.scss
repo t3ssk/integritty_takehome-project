@@ -120,3 +120,19 @@
         left: 77%;
     }
 }
+
+@media screen and (max-width: 380px){
+  
+    .menu-toggle{
+        left: 72%;
+        width: 90px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+  
+    .menu-toggle{
+        left: 67%;
+    }
+}
