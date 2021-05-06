@@ -22,16 +22,15 @@
             position: absolute;
             top: 65px;
             border-bottom: 5px solid $deep-red;
-            transition: 500ms cubic-bezier(0.59, 0.09, 0.28, 0.94);
+            transition: 350ms cubic-bezier(0.59, 0.09, 0.28, 0.94);
             transform-origin: left;
             transform: scaleX(0);
-            visibility: hidden;
+            z-index: 3;
         }
         &:hover, &:active{
             color: $deep-red;
             &::after{
                 transform: scaleX(1);
-                visibility: visible;
             }
         }
     }
@@ -60,6 +59,8 @@
             position: absolute;
             margin-top: -6px;
             left: 0;
+            transition: 500ms ease-in;
+            transform-origin: center;
         }
         &::after{
             content: '';
@@ -69,25 +70,52 @@
             position: absolute;
             margin-top: 6px;
             left: 0;
+            transition: 500ms ease-in;
+            transform-origin: left;
         }
     }
+     &__burger.open{
+         background-color: transparent;
+         &::before{
+            transform: rotate(45deg) translate(5px, 5px);
+         }
+         &::after{
+            transform: rotate(-45deg) translate(0.5px, 2.5px);
+         }
+     }
     &__text{
         display: block;
     }
     &:active, &:hover, &:focus{
         outline: 0;
-        color: $deep-red;
         border: 2px solid $deep-red;
+        background-color: $deep-red;
     }
 }
 
 @media screen and (max-width: 700px){
     .nav{
         &__links{
-            display: none;
+            display: block;
+            position: absolute;
+            z-index: 10;
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            padding: 100px 50px;
+            transform: translateX(-100%);
+            transition: 500ms ease-in;
+        }
+        &__links.open{
+            transform: translateX(0)
         }
     }
     .menu-toggle{
         display: flex;
+        position: absolute;
+        z-index: 11;
+        left: 70%;
     }
 }

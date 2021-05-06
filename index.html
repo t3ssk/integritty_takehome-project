@@ -13,12 +13,11 @@
 	<body>
 		<header class="nav">
 			<h2 class="nav__logo">Informace <span class="logo--red">o očkování</span></h2>
-			<!-- TODO: Mobile toggle -->
-            <button class="menu-toggle">
-                <div class="menu-toggle__burger"></div>
-                <p class="menu-toggle__text">Menu</p>
+            <button class="menu-toggle" id="menu-toggle">
+                <div class="menu-toggle__burger" id="menu-toggle__burger"></div>
+                <p class="menu-toggle__text" id="menu-toggle__text">Menu</p>
             </button>
-			<nav class="nav__links">
+			<nav class="nav__links" id="nav__links">
 				<a class="nav__link" href="#"><li>Často kladené otázky</li></a>
 				<a class="nav__link" href="#"><li>Plán očkování</li></a>
 			</nav>
@@ -26,17 +25,15 @@
 		<section class="hero">
 			<h1 class="hero__title">Udělejme tečku za pandemií.</h1>
 		</section> 
-        <div class="vaxxed__graph" aria-valuenow="1031033" aria-valuemax="10000000"></div>
+        <div class="vaxxed__graph" aria-valuenow="0" aria-valuemax="100" id="vaxxed__graph"></div>
 		<div class="vaxxed">
 			<p class="vaxxed__info top">V ČR již očkováno lidí</p>
-			<!-- TODO: Connect to API -->
-			<h2 class="vaxxed__number">1 031 033</h2>
+			<h2 class="vaxxed__number" id="vaxxed__number"></h2>
             <div class="vaxxed__info bottom">
-			    <p class="vaxxed__info bottom">k 16.3.2021</p>
-			    <img src="assets/Iconinfo.svg" class="vaxxed__icon"/>
+			    <p class="vaxxed__info bottom" id="vaxxed__day">loading...</p>
+			    <img src="assets/Iconinfo.svg" class="vaxxed__icon" id="vaxxed__icon"/>
             </div>
-			<!-- TODO: Toggle visibility on hover -->
-			<div class="vaxxed__tooltip">
+			<div class="vaxxed__tooltip" id="vaxxed__tooltip">
 				Více informací najdete na
 				<a  href="www.mzcr.cz" 
                     target="_blank" 
@@ -47,8 +44,8 @@
 		</div>
 		<section class="more-info">
 			<h3 class="more-info__heading">Další zdroje ověřených informací o koronaviru a očkování</h3>
-            <div class="more-info__flexbox">
-                <div class="more-info__flexchild">
+            <ul class="more-info__flexbox">
+                <li class="more-info__flexchild">
                     <img
                         src="assets/covid-portal-logo.png"
                         alt="" 
@@ -75,8 +72,8 @@
                             </span>
                         </button
                     ></a>
-                </div>
-                <div class="more-info__flexchild">
+                </li>
+                <li class="more-info__flexchild">
                     <img src="assets/mzcr-logo.png" 
                         alt=""
                         aria-hidden="true" 
@@ -102,8 +99,8 @@
                             </span>
                         </button>
                     </a>
-                </div>
-                <div class="more-info__flexchild">
+                </li>
+                <li class="more-info__flexchild">
                     <img src="assets/mzcr-logo.png" 
                         alt="" 
                         aria-hidden="true" 
@@ -129,8 +126,8 @@
                             </span>
                         </button>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
 		</section>
 		<footer class="footer-container">
 			<p class="footer-container__copyright">2021 &#169; Ministerstvo zdravotnictví ČR. Všechna práva vyhrazena.</p>
@@ -139,5 +136,6 @@
                 <a href="#" class="link--red">Ochrana osobních údajů</a>
 			</div>
 		</footer>
+        <script src="js/index.js" type="module"></script>
 	</body>
 </html>

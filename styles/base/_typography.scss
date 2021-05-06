@@ -32,9 +32,6 @@ body{
         color: $main-text;
         text-transform: uppercase;
         font-size: 14px;
-        &:hover, &:active, &:focus{
-            color: $deep-red;
-        }
     }
 }
 
